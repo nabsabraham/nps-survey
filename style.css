@@ -1,0 +1,137 @@
+body {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+
+}
+.colorStyle{
+    background-color: rgba(248, 247, 216, 0.7);
+    opacity: 0.8;
+}
+.content {
+    max-width: 960px;
+    margin: auto;
+  }
+
+hr.new {
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 50%;
+
+    }
+
+    
+.img-container {
+    padding-top: 5%;
+    text-align: center;
+    display: block;
+  }
+
+.form-question {
+    height: 500px;
+    width: 500px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(122, 118, 118);
+    text-align: center;
+    display: block;
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300
+
+}
+
+.form-select {
+
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.dfn {
+    text-align: center;
+}
+
+.question {
+margin-top: 1rem;
+}
+  
+.emoji {
+font-size: 2.5rem;
+transition: font-size 300ms ease;
+cursor: pointer;
+margin: 0;
+}
+
+.emoji-selected {
+font-size: 2rem;
+}
+
+.reaction {
+font-size: 2rem;
+opacity: 0;
+}
+
+.reaction-fade-in {
+-webkit-animation: fadeIn 300ms ease;
+        animation: fadeIn 300ms ease;
+opacity: 1;
+}
+
+.label{
+    padding:5px 10px 0px 10px;
+    color: RGB(25,90,90);
+    font-size: 16;
+    font-weight: 8;
+    font-family: 'Open Sans Condensed', sans-serif;    
+}
+
+#survey-q1 {
+    width: 900px;
+    margin: 0 auto;
+    ;
+}
+.cc-selector input{
+    -webkit-appearance: none;
+    width: 90px;
+    height: 90px;
+    border: none;
+    cursor: pointer;
+    transition: border .2s ease;
+    filter: grayscale(100%);
+    margin: 0 5px;
+    transition: all .2s ease;
+}
+.happy{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f60d.png);}
+
+.happyold{background-image:url(https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg);}
+.neutral{background-image:url(https://res.cloudinary.com/turdlife/image/upload/v1492864443/neutral_t3q8hz.svg);}
+.sad{background-image:url(https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg);}
+
+.cc-selector input:active +.smiley{opacity: 1;}
+.cc-selector input:checked +.smiley{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.smiley{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.smiley:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
