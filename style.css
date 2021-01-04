@@ -38,7 +38,9 @@ hr.new {
     padding-top: 5%;
     padding-bottom: 10%;
     font-family: 'Nunito', sans-serif;
-    font-weight: 300
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 10px;
 
 }
 
@@ -104,7 +106,6 @@ opacity: 1;
     margin: 0 5px;
     transition: all .2s ease;
 }
-.happy{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f60d.png);}
 
 .happyold{background-image:url(https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg);}
 .neutral{background-image:url(https://res.cloudinary.com/turdlife/image/upload/v1492864443/neutral_t3q8hz.svg);}
@@ -116,7 +117,31 @@ opacity: 1;
        -moz-filter: none;
             filter: none;
 }
-.smiley{
+
+.happyold{background-image:url(https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg);}
+.neutralold{background-image:url(https://res.cloudinary.com/turdlife/image/upload/v1492864443/neutral_t3q8hz.svg);}
+.sadold{background-image:url(https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg);}
+
+.emoji-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.cc-selector-2 input{
+    position:absolute;
+    z-index:999;
+}
+
+.meh{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f61e.png);}
+.medium{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f610.png);}
+.happy{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f60d.png);}
+.angry{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f620.png);}
+.smile{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f604.png);}
+
+
+.emoji{
     cursor:pointer;
     background-size:contain;
     background-repeat:no-repeat;
@@ -125,13 +150,12 @@ opacity: 1;
     -webkit-transition: all 100ms ease-in;
        -moz-transition: all 100ms ease-in;
             transition: all 100ms ease-in;
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-            filter: brightness(1.8) grayscale(1) opacity(.7);
+    -webkit-filter: brightness(1) grayscale(0.2) opacity(.9);
+       -moz-filter: brightness(1) grayscale(0.2) opacity(.9);
+            filter: brightness(1) grayscale(0.2) opacity(.9);
 }
-.smiley:hover{
-    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-            filter: brightness(1.2) grayscale(.5) opacity(.9);
+.emoji:hover{
+    -webkit-filter: brightness(1) grayscale(0) opacity(1);
+       -moz-filter: brightness(1) grayscale(0) opacity(1);
+            filter: brightness(1) grayscale(0) opacity(1);
 }
-

@@ -1,92 +1,46 @@
-body {
-    text-align: center;
-    font-family: "Nunito", sans-serif;
-  }
-  
-  h3 {
-    font-weight: 300;
-  }
-  
-  .button {
-    padding: 1rem;
-    color: white;
-    background: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    margin: 0 0 2rem;
-  }
-  
-  .hide {
-    display: none;
-  }
-  
-  .emoji-choices {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  @media (min-width: 900px) {
-    .emoji-choices {
-      display: flex;
-      max-width: 1000px;
-      margin: auto;
-    }
-  }
-  @media (min-width: 900px) {
-    .choice {
-      width: 20vw;
-      margin-top: 3rem;
-    }
-  }
-  .emoji {
-    font-size: 2.5rem;
-    transition: font-size 300ms ease;
-    cursor: pointer;
-    margin: 0;
-  }
-  
-  .emoji-selected {
-    font-size: 2rem;
-  }
-  
-  .reaction {
-    font-size: 1rem;
-    opacity: 0;
-  }
-  
-  .reaction-fade-in {
-    -webkit-animation: fadeIn 300ms ease;
-            animation: fadeIn 300ms ease;
-    opacity: 1;
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  .question {
-    margin-top: 1rem;
-  }
-  
-  .summary {
-    text-align: center;
-    margin: auto;
-    max-width: 800px;
-  }
+.emoji-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
 
-  .heart_eyes{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f60d.png);}
+.cc-selector-2 input{
+    position:absolute;
+    z-index:999;
+}
+
+.meh{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f61e.png);}
+.medium{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f610.png);}
+.happy{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f60d.png);}
+.angry{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f620.png);}
+.smile{background-image:url(https://twemoji.maxcdn.com/2/72x72/1f604.png);}
+
+
+.emoji{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1) grayscale(0.2) opacity(.9);
+       -moz-filter: brightness(1) grayscale(0.2) opacity(.9);
+            filter: brightness(1) grayscale(0.2) opacity(.9);
+}
+.emoji:hover{
+    -webkit-filter: brightness(1) grayscale(0) opacity(1);
+       -moz-filter: brightness(1) grayscale(0) opacity(1);
+            filter: brightness(1) grayscale(0) opacity(1);
+}
+
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
+* { font-family:monospace; }
+.cc-selector-2 input{ margin: 5px 0 0 12px; }
+.cc-selector-2 label{ margin-left: 7px; }
+span.cc{ color:#6d84b4 }

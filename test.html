@@ -4,12 +4,42 @@
     <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="teststyle.css">
-    <script src="testjs.js"></script>
 
 </head>
 <body>
 
-<!-- Q1-->
+    <form>
+        <p>Previously:</p>
+        <div>
+            <input checked="checked"  id="a1" type="radio" name="a" value="visa" />
+            <label for="a1">Visa</label><br/>
+            <input id="a2" type="radio" name="a" value="mastercard" />
+            <label for="a2">Mastercard</label>
+        </div>
+        <p>Now, with CSS3: </p>
+        <div class="emoji-selector">
+
+            <input id="angry" type="radio" name="credit-card" value="angry" />
+            <label class="emoji angry" for="angry"></label>
+
+            <input id="meh" type="radio" name="credit-card" value="meh" />
+            <label class="emoji meh" for="meh"></label>
+
+            <input id="medium" type="radio" name="credit-card" value="medium" />
+            <label class="emoji medium"for="medium"></label>
+
+            <input id="smile" type="radio" name="credit-card" value="smile" />
+            <label class="emoji smile" for="smile"></label>
+
+            <input id="happy" type="radio" name="credit-card" value="happy" />
+            <label class="emoji happy" for="happy"></label>
+
+        </div>
+
+        
+    </form>
+
+<!-- 
 <div id="question-1">
     <div class="question">
       <h1>How was your overall experience?</h1>
@@ -48,6 +78,7 @@
 
     </ul><a class="answer-submit button" href="#">Submit Answer</a>
 </div>
+-->
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
